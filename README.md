@@ -11,7 +11,7 @@ CleanMail é uma ferramenta para limpar rapidamente sua caixa de entrada de e-ma
 
 ## Demonstração
 
-<https://github.com/user-attachments/assets/b52220a0-b69e-4dcb-8eb2-f1bbe472d536>
+< [modo de uso](modo-de-uso.mov)>
 
 ## Como executar
 
@@ -69,6 +69,22 @@ Se você preferir hospedar o aplicativo você mesmo, há um Dockerfile disponív
 - Não é necessário usar App Password — funciona com contas que possuem 2FA habilitado.
 - Certifique-se de ter um arquivo `client_secret.json` válido na raiz do projeto para a autenticação OAuth2.
 
+## Configurando o `client_secret.json`
+
+Para configurar o `client_secret.json` e usar o Google OAuth2, siga os passos abaixo:
+
+1. Acesse o [Google Cloud Console](https://console.cloud.google.com/).
+2. Crie um novo projeto ou selecione um projeto existente.
+3. Navegue até "APIs e Serviços" > "Credenciais".
+4. Clique em "Criar credenciais" e selecione "ID do cliente OAuth".
+5. Configure a tela de consentimento OAuth, se ainda não tiver feito isso.
+6. Selecione "Aplicativo da Web" como tipo de aplicativo.
+7. Adicione os URIs de redirecionamento autorizados:
+   - `http://localhost:8501`
+   - `http://localhost`
+   - `http://localhost:8080`
+8. Clique em "Criar" e faça o download do arquivo JSON. Renomeie-o para `client_secret.json` e coloque-o na raiz do projeto.
+
 ## Estrutura do Projeto
 
 - `main.py`: Arquivo principal que executa o aplicativo Streamlit.
@@ -81,6 +97,29 @@ Se você preferir hospedar o aplicativo você mesmo, há um Dockerfile disponív
 ## Contribuindo
 
 Contribuições são bem-vindas! Sinta-se à vontade para abrir issues ou enviar pull requests.
+
+## Fazendo Push do Projeto
+
+Para fazer push do projeto para um repositório remoto, siga os passos abaixo:
+
+1. Adicione o repositório remoto:
+
+   ```bash
+   git remote add origin <URL_DO_REPOSITORIO>
+   ```
+
+2. Faça commit das suas alterações:
+
+   ```bash
+   git add .
+   git commit -m "Mensagem do commit"
+   ```
+
+3. Envie as alterações para o repositório remoto:
+
+   ```bash
+   git push origin main
+   ```
 
 ## Licença
 

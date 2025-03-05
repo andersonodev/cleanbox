@@ -5,7 +5,12 @@ from mail_client import MailAnalyzer
 from oauth2 import get_credentials
 
 # Configuração da página
-st.set_page_config(page_title="CleanBox", layout="centered")
+st.set_page_config(
+    page_title="CleanBox",
+    layout="centered",
+    page_icon="./cleanbox.png",  # Ou "cleanbox.ico"
+    )
+
 
 # Importar CSS externo (style.css)
 with open("style.css") as f:

@@ -1,5 +1,5 @@
 [project]
-name = "cleanmail"
+name = "cleanbox"
 version = "0.1.0"
 description = "A tool to quickly clean up your email inbox!"
 readme = "README.md"
