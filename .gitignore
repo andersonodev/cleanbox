@@ -6,10 +6,8 @@ __pycache__
 *.pyc
 .DS_Store
 .vscode
-
 .token_google.pkl
 token_google.pkl
-
 client_secret.json
-
 .client_secret.json
+client_secret.json

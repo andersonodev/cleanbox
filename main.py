@@ -8,7 +8,7 @@ from oauth2 import get_credentials
 st.set_page_config(
     page_title="CleanBox",
     layout="centered",
-    page_icon="./cleanbox.png",  # Ou "cleanbox.ico"
+    page_icon="./assets/cleanbox.png",  # Ou "cleanbox.ico"
     )
 
 
