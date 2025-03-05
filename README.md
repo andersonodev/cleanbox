@@ -11,7 +11,15 @@ CleanMail é uma ferramenta para limpar rapidamente sua caixa de entrada de e-ma
 
 ## Demonstração
 
-< [modo de uso](https://github.com/andersonodev/cleanbox/blob/main/assets/modo-de-uso.mp4))>
+< [modo de uso](https://github.com/andersonodev/cleanbox/blob/main/assets/modo-de-uso.mp4)>
+
+<video width="600" controls>
+  <source src="https://raw.githubusercontent.com/andersonodev/cleanbox/main/assets/modo-de-uso.mp4" type="video/mp4">
+  Seu navegador não suporta vídeo.
+</video>
+
+
+
 
 ## Como executar
 
